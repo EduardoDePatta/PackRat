@@ -30,7 +30,6 @@ const MapButtonsOverlay = ({
   progress,
   navigateToMaps,
 }) => {
-  console.log('newwwww');
   const [showStyleOptions, setShowStyleOptions] = useState(false);
   const { enableDarkMode, enableLightMode, isDark, isLight, currentTheme } =
     useTheme();
@@ -284,6 +283,7 @@ const loadStyles = (theme) => {
       borderRadius: 30,
       marginTop: 30,
       backgroundColor: currentTheme.colors.white,
+      zIndex: 2,
     },
     enterFullScreenBtn: {
       width: 40,
